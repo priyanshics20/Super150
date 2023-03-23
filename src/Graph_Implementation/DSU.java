@@ -22,7 +22,9 @@ public class DSU {
     private Node find(Node nn){
         if(nn.parent==nn)
             return nn;
-        return find(nn.parent);
+        Node node= find(nn.parent);
+        nn.parent=node;
+        return node;
     }
     public void union(int v1, int v2){
         Node n1=map.get(v1);
@@ -39,5 +41,6 @@ public class DSU {
         else if(re1.rank>re2.rank){
             re2.parent=re1;
         }
+
     }
 }
