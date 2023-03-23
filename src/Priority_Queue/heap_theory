@@ -1,0 +1,10 @@
+Heap - a heap must be a complete binary tree.
+It is of two type -
+1. min heap - here, the root data must be small or equal then its left and right child
+2. max heap - here , the root data must be greater or equal then its left and right
+
+Heap is implemented using ArrayList.
+
+parent index - (currentIndex - 1) / 2 ;
+left child  - (2*pi)+1;
+right child - (2*pi)+2;
