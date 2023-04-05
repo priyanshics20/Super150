@@ -28,7 +28,7 @@ public class DSU {
     }
     public void union(int v1, int v2){
         Node n1=map.get(v1);
-        Node re1=find(n1););
+        Node re1=find(n1);
         Node n2=map.get(v2);
         Node re2=find(n2);
         if(re1.rank==re2.rank){
